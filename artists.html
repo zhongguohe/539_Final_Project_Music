@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artist Spotlight — Mandopop Starter Guide</title>
+  <meta name="description" content="Meet the most influential Chinese pop artists, from Jay Chou to G.E.M., and discover their signature songs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Mandopop Guide</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html" class="active" aria-current="page">Artists</a></li>
+        <li><a href="recommendations.html">Picks</a></li>
+        <li><a href="eras.html">Eras</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Page Header -->
+    <header class="page-header">
+      <h1>Artist Spotlight</h1>
+      <p>Get to know the voices that defined and continue to shape Chinese pop music — their stories, styles, and standout tracks.</p>
+    </header>
+
+    <!-- Filter Bar -->
+    <section class="section" style="padding-top: 20px;" aria-label="Artist cards">
+      <div class="section-container">
+        <div class="filter-bar" role="toolbar" aria-label="Filter artists by style">
+          <button class="filter-btn active" data-filter="all">All Artists</button>
+          <button class="filter-btn" data-filter="rnb">R&amp;B / Soul</button>
+          <button class="filter-btn" data-filter="pop">Pop / Ballad</button>
+          <button class="filter-btn" data-filter="hiphop">Hip-Hop / Rap</button>
+          <button class="filter-btn" data-filter="internet">Internet Pop</button>
+          <button class="filter-btn" data-filter="rock">Rock</button>
+        </div>
+
+        <div class="artist-grid">
+          <!-- Jay Chou -->
+          <article class="artist-detail-card fade-in" data-genre="hiphop pop">
+            <div class="card-image">
+              <img src="image/jay-chou.jpg" alt="Jay Chou (周杰伦) performing on stage, the iconic Taiwanese singer-songwriter who revolutionized Mandopop" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Jay Chou</h2>
+              <p class="cn-name">周杰伦</p>
+              <p>Born in Taiwan in 1979, Jay Chou is widely regarded as the "King of Mandopop." He revolutionized Chinese pop by blending classical Chinese instrumentation with Western R&B, hip-hop, and rock. His unique mumbling vocal style was initially controversial but became his signature.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">R&amp;B</span>
+                <span class="tag">Hip-Hop</span>
+                <span class="tag">Taiwan</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="jay-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="jay-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Dao Xiang (稻香) — Upbeat harvest anthem</li>
+                    <li>Qing Hua Ci (青花瓷) — Chinese-style elegance</li>
+                    <li>Ye Qu (夜曲) — Dark, cinematic R&B</li>
+                    <li>An Jing (安静) — Heartbreak ballad classic</li>
+                    <li>Shuang Jie Gun (双截棍) — Martial-arts hip-hop</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Wang Leehom -->
+          <article class="artist-detail-card fade-in" data-genre="pop rnb">
+            <div class="card-image">
+              <img src="image/wang-leehom.jpg" alt="Wang Leehom (王力宏) in a studio setting, the multi-instrumentalist who pioneered chinked-out music" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Wang Leehom</h2>
+              <p class="cn-name">王力宏</p>
+              <p>Chinese-American musician who coined the term "chinked-out" to describe his fusion of Chinese traditional music with pop, hip-hop, and R&B. A multi-instrumentalist and Berklee-educated artist, Leehom pushed the boundaries of what Mandopop could be.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">R&amp;B</span>
+                <span class="tag">Fusion</span>
+                <span class="tag">Chinese-American</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="leehom-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="leehom-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Wei Yi (唯一) — Timeless love ballad</li>
+                    <li>Gai Shi Ying Xiong (盖世英雄) — Chinked-out anthem</li>
+                    <li>Ni Bu Zhi Dao De Shi (你不知道的事) — From the film "Love in Disguise" (恋爱通告)</li>
+                    <li>Hua Tian Cuo (花田错) — Peking opera meets pop</li>
+                    <li>Luo Ye Gui Gen (落叶归根) — Cultural identity ballad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- JJ Lin -->
+          <article class="artist-detail-card fade-in" data-genre="pop">
+            <div class="card-image">
+              <img src="image/jj-lin.jpg" alt="JJ Lin (林俊杰) portrait, the Singaporean vocal powerhouse and acclaimed Mandopop songwriter" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>JJ Lin</h2>
+              <p class="cn-name">林俊杰</p>
+              <p>Born in Singapore, JJ Lin is one of the most gifted vocalists and songwriters in Mandopop. His music combines pop, R&B, electronic, and classical elements. Known for his incredible vocal range and emotional delivery, he has won multiple Golden Melody Awards.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Ballad</span>
+                <span class="tag">Singapore</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="jj-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="jj-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Jiang Nan (江南) — Dreamy pop masterpiece</li>
+                    <li>Xiu Lian Ai Qing (修炼爱情) — Emotional ballad</li>
+                    <li>Ke Xi Mei Ru Guo (可惜没如果) — Bittersweet regret</li>
+                    <li>Bu Wei Shei Er Zuo De Ge (不为谁而作的歌) — Award-winning track</li>
+                    <li>Dui De Shi Jian Dui De Ren (对的时间对的人) — Beautiful love song</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- David Tao -->
+          <article class="artist-detail-card fade-in" data-genre="rnb">
+            <div class="card-image">
+              <img src="image/david-tao.jpg" alt="David Tao (陶喆) performing, the godfather of Chinese R&B and neo-soul" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>David Tao</h2>
+              <p class="cn-name">陶喆</p>
+              <p>Often called the "Godfather of Chinese R&B," David Tao brought American soul, jazz, and R&B sensibilities to Mandopop. His self-titled debut album in 1997 was groundbreaking, introducing a smoother, groovier sound to Chinese-language music.</p>
+              <div class="artist-tags">
+                <span class="tag">R&amp;B</span>
+                <span class="tag">Soul</span>
+                <span class="tag">Jazz</span>
+                <span class="tag">Taiwan</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="tao-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="tao-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Pu Tong Peng You (普通朋友) — Classic heartbreak R&B</li>
+                    <li>Ai Hen Jian Dan (爱很简单) — Smooth, soulful ballad</li>
+                    <li>Sha Shou Jian (杀手锏) — Funky groove</li>
+                    <li>Gui (鬼) — Edgy rock-R&B crossover</li>
+                    <li>Yue Liang Dai Biao Wo De Xin (月亮代表谁的心) — Teresa Teng tribute</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Jason Zhang -->
+          <article class="artist-detail-card fade-in" data-genre="pop">
+            <div class="card-image">
+              <img src="image/zhang-jie.jpg" alt="Jason Zhang (张杰) performing, Chinese pop singer celebrated for his powerful high notes" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Jason Zhang</h2>
+              <p class="cn-name">张杰</p>
+              <p>Rising to fame through Chinese talent shows, Jason Zhang is celebrated for his powerful high notes and energetic performances. He won the International Artist of the Year at the American Music Awards in 2014, bringing global attention to Chinese pop.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Power Ballad</span>
+                <span class="tag">Mainland China</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="zhang-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="zhang-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Zhu Guang (逐光) — Inspirational anthem</li>
+                    <li>Tian Xia (天下) — Epic, cinematic pop</li>
+                    <li>Ming Tian Guo Hou (明天过后) — Romantic ballad</li>
+                    <li>Zhe Jiu Shi Ai (这就是爱) — Sweet love song</li>
+                    <li>Shao Nian Zhong Guo Shuo (少年中国说) — Patriotic pop</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- G.E.M. -->
+          <article class="artist-detail-card fade-in" data-genre="pop">
+            <div class="card-image">
+              <img src="image/gem.jpg" alt="G.E.M. (邓紫棋) performing live, the Hong Kong singer-songwriter known for her explosive vocal performances" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>G.E.M.</h2>
+              <p class="cn-name">邓紫棋</p>
+              <p>Gloria Tang, known as G.E.M. (Get Everybody Moving), is a Hong Kong singer-songwriter who gained massive popularity through the TV show "I Am a Singer." Known for her explosive vocal power and genre-blending pop, she is one of the biggest female artists in Chinese music.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Power Vocal</span>
+                <span class="tag">Hong Kong</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="gem-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="gem-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Guang Nian Zhi Wai (光年之外) — Sci-fi pop anthem from Passengers</li>
+                    <li>Duo Yuan Dou Yao Zai Yi Qi (多远都要在一起) — Heartfelt love anthem</li>
+                    <li>Where Did U Go — Bilingual pop banger</li>
+                    <li>Ju Hao (句号) — Fierce, empowering break-up declaration</li>
+                    <li>A.I.N.Y. — Bilingual pop classic</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Khalil Fong -->
+          <article class="artist-detail-card fade-in" data-genre="rnb">
+            <div class="card-image">
+              <img src="image/khalil-fong.jpg" alt="Khalil Fong (方大同) speaking into a microphone at an awards ceremony, wearing a striped suit and hat with glasses" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Khalil Fong</h2>
+              <p class="cn-name">方大同</p>
+              <p>A Hong Kong-based singer-songwriter who brought authentic R&B, neo-soul, and jazz to Mandopop. Influenced by Stevie Wonder and D'Angelo, Khalil Fong's music stands out for its organic instrumentation and warm, textured vocals.</p>
+              <div class="artist-tags">
+                <span class="tag">R&amp;B</span>
+                <span class="tag">Neo-Soul</span>
+                <span class="tag">Jazz</span>
+                <span class="tag">Hong Kong</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="khalil-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="khalil-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>San Ren You (三人游) — Tender, jazzy ballad</li>
+                    <li>Ai Ai Ai (爱爱爱) — Catchy soul-pop</li>
+                    <li>Hong Dou (红豆) — Beautiful Faye Wong cover</li>
+                    <li>Te Bie De Ren (特别的人) — Heartfelt love song</li>
+                    <li>Wu Guo (悟空) — From the album "Journey to the West"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Eason Chan -->
+          <article class="artist-detail-card fade-in" data-genre="pop">
+            <div class="card-image">
+              <img src="image/eason-chan.jpg" alt="Eason Chan (陈奕迅) smiling and holding an award trophy at a CCTV-MTV music awards ceremony, wearing a red shirt" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Eason Chan</h2>
+              <p class="cn-name">陈奕迅</p>
+              <p>A Hong Kong legend equally acclaimed in Cantopop and Mandopop. Eason Chan is known for his deeply emotional voice and incredible versatility. He has won numerous awards and is considered one of the greatest Chinese-language singers of all time.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Ballad</span>
+                <span class="tag">Cantopop</span>
+                <span class="tag">Hong Kong</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="eason-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="eason-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Shi Nian (十年) — Iconic Mandarin ballad</li>
+                    <li>Hao Jiu Bu Jian (好久不见) — Nostalgic classic</li>
+                    <li>Wen Wen (稳稳的幸福) — Warm and uplifting</li>
+                    <li>Gu Du Huan Zhe (孤独患者) — Emotional masterpiece</li>
+                    <li>Fu Zhong Ren (浮夸) — Dramatic Cantopop classic</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Stefanie Sun -->
+          <article class="artist-detail-card fade-in" data-genre="pop">
+            <div class="card-image">
+              <img src="image/stefanie-sun.jpg" alt="Stefanie Sun (孙燕姿) portrait, the Singaporean Mandopop queen whose voice defined early 2000s Chinese pop" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Stefanie Sun</h2>
+              <p class="cn-name">孙燕姿</p>
+              <p>A Singaporean singer whose warm, crystalline voice defined early 2000s Mandopop. Stefanie Sun's debut was a massive success, and she quickly became one of the top-selling female artists in Asia. Her songs are known for their youthful energy and emotional sincerity.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Ballad</span>
+                <span class="tag">Singapore</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="stefanie-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="stefanie-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Tian Hei Hei (天黑黑) — Debut classic</li>
+                    <li>Yu Jian (遇见) — Iconic film soundtrack</li>
+                    <li>Lv Guang (绿光) — Upbeat pop anthem</li>
+                    <li>Wo Huai Nian De (我怀念的) — Emotional ballad</li>
+                    <li>Feng Zheng (风筝) — Metaphorical love song</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Xu Song (Vae) -->
+          <article class="artist-detail-card fade-in" data-genre="internet pop">
+            <div class="card-image">
+              <img src="image/xu-song.jpg" alt="Xu Song (许嵩/Vae) on the cover of his album Sought and Got, sitting on a white piano by the seaside" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Xu Song (Vae)</h2>
+              <p class="cn-name">许嵩</p>
+              <p>Born in Hefei in 1986, Xu Song — known online as "Vae" — is the undisputed king of Chinese internet music. He writes, composes, arranges, produces, and sings all his own songs. His poetic lyrics and "Chinese style" indie pop earned him millions of fans before ever signing with a label.</p>
+              <div class="artist-tags">
+                <span class="tag">Internet Pop</span>
+                <span class="tag">Indie</span>
+                <span class="tag">Chinese Style</span>
+                <span class="tag">Mainland China</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="xusong-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="xusong-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>You He Bu Ke (有何不可) — Warm, playful hit</li>
+                    <li>Duan Qiao Can Xue (断桥残雪) — Poetic "Chinese style" classic</li>
+                    <li>Su Yan (素颜) — Charming duet anthem</li>
+                    <li>Qing Ming Yu Shang (清明雨上) — Elegant classical imagery</li>
+                    <li>Ru Guo Dang Shi (如果当时) — Nostalgic love ballad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Silence Wang -->
+          <article class="artist-detail-card fade-in" data-genre="internet pop">
+            <div class="card-image">
+              <img src="image/silence-wang.jpg" alt="Silence Wang (汪苏泷) on the cover of his album Legendary Movement, wearing large round glasses with steampunk-style background" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Silence Wang</h2>
+              <p class="cn-name">汪苏泷</p>
+              <p>Born in Shenyang in 1989, Silence Wang is one of the "Internet Big Three" (网络三巨头). A self-taught musician who started by posting original songs online, he quickly became a campus sensation. His catchy melodies and sweet vocal style made him a favorite in KTV rooms across China.</p>
+              <div class="artist-tags">
+                <span class="tag">Internet Pop</span>
+                <span class="tag">Sweet Pop</span>
+                <span class="tag">Mainland China</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="silencewang-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="silencewang-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Xiao Xing Xing (小星星) — Viral modern nursery rhyme</li>
+                    <li>Bu Fen Shou De Lian Ai (不分手的恋爱) — QQ Music #1 hit</li>
+                    <li>You Dian Tian (有点甜) — Sweet duet with BY2</li>
+                    <li>Hou Hui Wu Qi (后会无期) — Bittersweet farewell anthem</li>
+                    <li>Wan An (晚安) — Tender late-night ballad</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Xu Liang -->
+          <article class="artist-detail-card fade-in" data-genre="internet pop">
+            <div class="card-image">
+              <img src="image/xu-liang.jpg" alt="Xu Liang (徐良) on the cover of his album Bad Boy, wearing an orange jumpsuit in a stylized floating pose" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Xu Liang</h2>
+              <p class="cn-name">徐良</p>
+              <p>Born in 1987, Xu Liang is the third member of the "Internet Big Three." Known for his quirky, playful duets with female singer Xiao Ling, Xu Liang's songs blended catchy hooks with edgy, club-influenced production. His music dominated QQ Music charts and campus karaoke in the early 2010s.</p>
+              <div class="artist-tags">
+                <span class="tag">Internet Pop</span>
+                <span class="tag">Duet</span>
+                <span class="tag">Mainland China</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="xuliang-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="xuliang-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Ke Guan Bu Ke Yi (客官不可以) — Playful, iconic hit</li>
+                    <li>Huai Nv Hai (坏女孩) — Edgy club-pop banger</li>
+                    <li>Hou Hui Wu Qi (后会无期) — Collab with Silence Wang</li>
+                    <li>Na Shi Yu (那时雨) — Nostalgic slow ballad</li>
+                    <li>Kao Shi Shen Me De Dou Qu Si Ba (考试什么的都去死吧) — Campus comedy anthem</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Mayday -->
+          <article class="artist-detail-card fade-in" data-genre="rock pop">
+            <div class="card-image">
+              <img src="image/mayday.jpg" alt="Mayday (五月天) band members at a press conference at Red House Theater in Taipei, 2013, dressed in black" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Mayday</h2>
+              <p class="cn-name">五月天</p>
+              <p>Taiwan's biggest rock band, formed in 1997. Mayday blends pop-rock anthems with deeply emotional lyrics about youth, friendship, and perseverance. Their stadium concerts draw hundreds of thousands of fans across Asia. Lead singer Ashin's vocals and songwriting define a generation.</p>
+              <div class="artist-tags">
+                <span class="tag">Rock</span>
+                <span class="tag">Pop-Rock</span>
+                <span class="tag">Taiwan</span>
+                <span class="tag">Band</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="mayday-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="mayday-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Wen Rou (温柔) — Defining 2000s rock ballad</li>
+                    <li>Tu Ran Hao Xiang Ni (突然好想你) — Emotional reunion anthem</li>
+                    <li>Xian Yu (咸鱼) — Inspirational underdog song</li>
+                    <li>Wo Bu Yuan Rang Ni Yi Ge Ren (我不愿让你一个人) — Tender love promise</li>
+                    <li>Shang Xin De Ren Bie Ting Man Ge (伤心的人别听慢歌) — Ironic up-tempo heartbreak</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Li Ronghao -->
+          <article class="artist-detail-card fade-in" data-genre="pop">
+            <div class="card-image">
+              <img src="image/li-ronghao.jpg" alt="Li Ronghao (李荣浩) on the cover of his album Model, a black-and-white portrait showing the singer-songwriter's face in close-up" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Li Ronghao</h2>
+              <p class="cn-name">李荣浩</p>
+              <p>Born in Bengbu in 1985, Li Ronghao is one of mainland China's most talented singer-songwriters and producers. Known for his distinctive small-eyed look and warm, smoky voice, he writes, composes, and produces nearly all of his own music. His debut single "Model" became an instant classic.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Singer-Songwriter</span>
+                <span class="tag">Mainland China</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="lironghao-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="lironghao-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Mo Te (模特) — Smoky, philosophical debut hit</li>
+                    <li>Li Bai (李白) — Catchy tribute to the Tang poet</li>
+                    <li>Bu Jiang Jiu (不将就) — Film theme from "He Yi Sheng Xiao Mo"</li>
+                    <li>Nian Shao You Wei (年少有为) — Nostalgic ballad about youth</li>
+                    <li>Ma Ma (麻雀) — Tender metaphor about ordinary life</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Joker Xue -->
+          <article class="artist-detail-card fade-in" data-genre="pop">
+            <div class="card-image">
+              <img src="image/joker-xue.jpg" alt="Joker Xue (薛之谦) on stage at a 2019 Baidu Boiling Point concert, wearing an oversized red sweater under purple stage lighting" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h2>Joker Xue</h2>
+              <p class="cn-name">薛之谦</p>
+              <p>Born in Shanghai in 1983, Joker Xue is one of China's most popular singer-songwriters. After years of setbacks, his comeback single "Actor" went viral in 2015, making him a household name. Known for his witty personality and heartfelt ballads, he dominates Chinese streaming charts.</p>
+              <div class="artist-tags">
+                <span class="tag">Pop</span>
+                <span class="tag">Ballad</span>
+                <span class="tag">Mainland China</span>
+              </div>
+              <button class="card-expand-btn" aria-expanded="false" aria-controls="jokerxue-songs">
+                View Notable Songs <span class="arrow" aria-hidden="true">&#9660;</span>
+              </button>
+              <div class="expandable-content" id="jokerxue-songs">
+                <div class="notable-songs">
+                  <h4>Must-Listen Tracks</h4>
+                  <ul class="song-list" role="list">
+                    <li>Yan Yuan (演员) — Viral comeback mega-hit</li>
+                    <li>Chou Ba Guai (丑八怪) — Self-deprecating love song</li>
+                    <li>Gang Gang Hao (刚刚好) — Bittersweet breakup anthem</li>
+                    <li>Ren Shi Ni Zhen Hao (认识你真好) — Warm friendship ballad</li>
+                    <li>Xia Yu Le (下雨了) — Melancholy classic</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top of page">&#9650;</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">Mandopop Guide</div>
+      <p>A project by Zhongguo He for SI 539 — Web Accessibility.<br>
+      Artist photos sourced from Wikimedia Commons under Creative Commons licenses.<br>
+      Internet Big Three artist images use album covers from Apple Music.<br>
+      Album cover images sourced from Apple Music for educational purposes.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="artists.html">Artists</a>
+        <a href="recommendations.html">Picks</a>
+        <a href="eras.html">Eras</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

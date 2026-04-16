@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song Picks — Mandopop Starter Guide</title>
+  <meta name="description" content="Curated Mandopop song recommendations sorted by mood — from chill vibes to energetic bangers.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">Mandopop Guide</a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="recommendations.html" class="active" aria-current="page">Picks</a></li>
+        <li><a href="eras.html">Eras</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <header class="page-header">
+      <h1>Song Picks</h1>
+      <p>Explore our curated Mandopop collections — browse by mood, discover timeless Chinese classical-style tracks, or dive into Jay Chou's iconic rap catalog. Click any song to listen!</p>
+    </header>
+
+    <!-- Tab Navigation -->
+    <div class="picks-tabs" role="tablist" aria-label="Song collection categories">
+      <button class="picks-tab active" role="tab" aria-selected="true" aria-controls="panel-mood" id="tab-mood">Mood Picks</button>
+      <button class="picks-tab" role="tab" aria-selected="false" aria-controls="panel-gufeng" id="tab-gufeng">古风 Chinese Classical</button>
+      <button class="picks-tab" role="tab" aria-selected="false" aria-controls="panel-rap" id="tab-rap">说唱 Rap &amp; Hip-Hop</button>
+    </div>
+
+    <!-- PANEL: Mood Picks -->
+    <section class="picks-panel active" id="panel-mood" role="tabpanel" aria-labelledby="tab-mood" style="padding-top: 20px;">
+      <div class="section-container">
+
+        <!-- Chill & Relaxing -->
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon chill" aria-hidden="true">&#127749;</div>
+            <div>
+              <h3>Chill &amp; Relaxing</h3>
+              <p>Wind down with these smooth, mellow tracks.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="1hI-7vj2FhE" data-title="An Jing (安静)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/an-jing.jpg" tabindex="0" role="button" aria-label="Play An Jing by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/an-jing.jpg" alt="Album cover for Fantasy by Jay Chou, featuring the song An Jing" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>An Jing (安静)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Fantasy (范特西), 2001</p>
+              </div>
+              <button class="play-btn" aria-label="Play An Jing by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="s1nlIafxVYQ" data-title="Ai Hen Jian Dan (爱很简单)" data-artist="David Tao (陶喆)" data-cover="image/albums/ai-hen-jian-dan.jpg" tabindex="0" role="button" aria-label="Play Ai Hen Jian Dan by David Tao">
+              <div class="song-card-art">
+                <img src="image/albums/ai-hen-jian-dan.jpg" alt="Album cover for David Tao self-titled album, featuring the song Ai Hen Jian Dan" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ai Hen Jian Dan (爱很简单)</h4>
+                <p class="song-artist">David Tao (陶喆)</p>
+                <p class="song-album">Album: David Tao, 1997</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ai Hen Jian Dan by David Tao on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="TRzwna3cU5M" data-title="San Ren You (三人游)" data-artist="Khalil Fong (方大同)" data-cover="image/albums/san-ren-you.jpg" tabindex="0" role="button" aria-label="Play San Ren You by Khalil Fong">
+              <div class="song-card-art">
+                <img src="image/albums/san-ren-you.jpg" alt="Album cover for Timeless by Khalil Fong, featuring the song San Ren You" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>San Ren You (三人游)</h4>
+                <p class="song-artist">Khalil Fong (方大同)</p>
+                <p class="song-album">Album: Timeless, 2009</p>
+              </div>
+              <button class="play-btn" aria-label="Play San Ren You by Khalil Fong on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="fu02q2yhwPA" data-title="Yu Jian (遇见)" data-artist="Stefanie Sun (孙燕姿)" data-cover="image/albums/yu-jian.jpg" tabindex="0" role="button" aria-label="Play Yu Jian by Stefanie Sun">
+              <div class="song-card-art">
+                <img src="image/albums/yu-jian.jpg" alt="Album cover for the film Turn Left Turn Right soundtrack by Stefanie Sun, featuring the song Yu Jian" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Yu Jian (遇见)</h4>
+                <p class="song-artist">Stefanie Sun (孙燕姿)</p>
+                <p class="song-album">From the film "Turn Left, Turn Right," 2003</p>
+              </div>
+              <button class="play-btn" aria-label="Play Yu Jian by Stefanie Sun on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="QhzMqVFcR6w" data-title="You He Bu Ke (有何不可)" data-artist="Vae / Xu Song (许嵩)" data-cover="image/albums/you-he-bu-ke.jpg" tabindex="0" role="button" aria-label="Play You He Bu Ke by Xu Song">
+              <div class="song-card-art">
+                <img src="image/albums/you-he-bu-ke.jpg" alt="Album cover for Custom by Xu Song (Vae), featuring the warm hit You He Bu Ke" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>You He Bu Ke (有何不可)</h4>
+                <p class="song-artist">Vae / Xu Song (许嵩)</p>
+                <p class="song-album">From album "Custom (自定义)," 2009</p>
+              </div>
+              <button class="play-btn" aria-label="Play You He Bu Ke by Xu Song on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="OtEJ6LGCW-U" data-title="You Dian Tian (有点甜)" data-artist="Silence Wang (汪苏泷) ft. BY2" data-cover="image/albums/you-dian-tian.jpg" tabindex="0" role="button" aria-label="Play You Dian Tian by Silence Wang">
+              <div class="song-card-art">
+                <img src="image/albums/you-dian-tian.jpg" alt="Album cover for Silence Wang, featuring the sweet duet You Dian Tian (A Bit Sweet)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>You Dian Tian (有点甜)</h4>
+                <p class="song-artist">Silence Wang (汪苏泷) ft. BY2</p>
+                <p class="song-album">Sweet duet, 2012</p>
+              </div>
+              <button class="play-btn" aria-label="Play You Dian Tian by Silence Wang on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+        <!-- Energy & Workout -->
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon energy" aria-hidden="true">&#128293;</div>
+            <div>
+              <h3>Energy &amp; Workout</h3>
+              <p>Pump up your adrenaline with these powerful tracks.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="OR-0wptI_u0" data-title="Shuang Jie Gun (双截棍)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/shuang-jie-gun.jpg" tabindex="0" role="button" aria-label="Play Shuang Jie Gun by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/shuang-jie-gun.jpg" alt="Album cover for Fantasy by Jay Chou, featuring the song Shuang Jie Gun (Nunchucks)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Shuang Jie Gun (双截棍)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Fantasy (范特西), 2001</p>
+              </div>
+              <button class="play-btn" aria-label="Play Shuang Jie Gun by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="7OycJrzHfmc" data-title="Gai Shi Ying Xiong (盖世英雄)" data-artist="Wang Leehom (王力宏)" data-cover="image/albums/gai-shi-ying-xiong.jpg" tabindex="0" role="button" aria-label="Play Gai Shi Ying Xiong by Wang Leehom">
+              <div class="song-card-art">
+                <img src="image/albums/gai-shi-ying-xiong.jpg" alt="Album cover for Heroes of Earth by Wang Leehom, featuring the title track Gai Shi Ying Xiong" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Gai Shi Ying Xiong (盖世英雄)</h4>
+                <p class="song-artist">Wang Leehom (王力宏)</p>
+                <p class="song-album">Album: Heroes of Earth (盖世英雄), 2005</p>
+              </div>
+              <button class="play-btn" aria-label="Play Gai Shi Ying Xiong by Wang Leehom on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="T4SimnaiktU" data-title="Guang Nian Zhi Wai (光年之外)" data-artist="G.E.M. (邓紫棋)" data-cover="image/albums/guang-nian-zhi-wai.jpg" tabindex="0" role="button" aria-label="Play Guang Nian Zhi Wai by G.E.M.">
+              <div class="song-card-art">
+                <img src="image/albums/guang-nian-zhi-wai.jpg" alt="Album cover for Light Years Away single by G.E.M., from the film Passengers" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Guang Nian Zhi Wai (光年之外)</h4>
+                <p class="song-artist">G.E.M. (邓紫棋)</p>
+                <p class="song-album">From the film "Passengers," 2016</p>
+              </div>
+              <button class="play-btn" aria-label="Play Guang Nian Zhi Wai by G.E.M. on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="dUqxf64sTs8" data-title="Ming Tian Guo Hou (明天过后)" data-artist="Jason Zhang (张杰)" data-cover="image/albums/zhu-guang.jpg" tabindex="0" role="button" aria-label="Play Ming Tian Guo Hou by Jason Zhang">
+              <div class="song-card-art">
+                <img src="image/albums/zhu-guang.jpg" alt="Album cover for Jason Zhang, featuring the song Ming Tian Guo Hou" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ming Tian Guo Hou (明天过后)</h4>
+                <p class="song-artist">Jason Zhang (张杰)</p>
+                <p class="song-album">Single, 2008</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ming Tian Guo Hou by Jason Zhang on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="6p6efWi3GPI" data-title="Ke Guan Bu Ke Yi (客官不可以)" data-artist="Xu Liang (徐良) ft. Xiao Ling" data-cover="image/albums/ke-guan-bu-ke-yi.jpg" tabindex="0" role="button" aria-label="Play Ke Guan Bu Ke Yi by Xu Liang">
+              <div class="song-card-art">
+                <img src="image/albums/ke-guan-bu-ke-yi.jpg" alt="Album cover for Xu Liang, featuring the playful hit Ke Guan Bu Ke Yi" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ke Guan Bu Ke Yi (客官不可以)</h4>
+                <p class="song-artist">Xu Liang (徐良) ft. Xiao Ling</p>
+                <p class="song-album">Viral internet pop hit, 2011</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ke Guan Bu Ke Yi by Xu Liang on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="Hlp8XD0R5qo" data-title="Gu Yong Zhe (孤勇者)" data-artist="Eason Chan (陈奕迅)" data-cover="image/albums/gu-yong-zhe.jpg" tabindex="0" role="button" aria-label="Play Gu Yong Zhe by Eason Chan">
+              <div class="song-card-art">
+                <img src="image/albums/gu-yong-zhe.jpg" alt="Album cover for the League of Legends Arcane theme song Gu Yong Zhe by Eason Chan" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Gu Yong Zhe (孤勇者)</h4>
+                <p class="song-artist">Eason Chan (陈奕迅)</p>
+                <p class="song-album">League of Legends "Arcane" theme, 2021</p>
+              </div>
+              <button class="play-btn" aria-label="Play Gu Yong Zhe by Eason Chan on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+        <!-- Rainy Day / Melancholy -->
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon melancholy" aria-hidden="true">&#127783;&#65039;</div>
+            <div>
+              <h3>Rainy Day &amp; Melancholy</h3>
+              <p>Embrace your feelings with these beautifully sad songs.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="JM9rx_hN1Ko" data-title="Shi Nian (十年)" data-artist="Eason Chan (陈奕迅)" data-cover="image/albums/shi-nian.jpg" tabindex="0" role="button" aria-label="Play Shi Nian by Eason Chan">
+              <div class="song-card-art">
+                <img src="image/albums/shi-nian.jpg" alt="Album cover for Black White Grey by Eason Chan, featuring the song Shi Nian (Ten Years)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Shi Nian (十年)</h4>
+                <p class="song-artist">Eason Chan (陈奕迅)</p>
+                <p class="song-album">Album: Black White Grey (黑白灰), 2003</p>
+              </div>
+              <button class="play-btn" aria-label="Play Shi Nian by Eason Chan on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="vsBf_0gDxSM" data-title="Ke Xi Mei Ru Guo (可惜没如果)" data-artist="JJ Lin (林俊杰)" data-cover="image/albums/ke-xi-mei-ru-guo.jpg" tabindex="0" role="button" aria-label="Play Ke Xi Mei Ru Guo by JJ Lin">
+              <div class="song-card-art">
+                <img src="image/albums/ke-xi-mei-ru-guo.jpg" alt="Album cover for Genesis by JJ Lin, featuring the song Ke Xi Mei Ru Guo (If Only)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ke Xi Mei Ru Guo (可惜没如果)</h4>
+                <p class="song-artist">JJ Lin (林俊杰)</p>
+                <p class="song-album">Album: Genesis (新地球), 2014</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ke Xi Mei Ru Guo by JJ Lin on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="3L3Me4JXVqE" data-title="Pu Tong Peng You (普通朋友)" data-artist="David Tao (陶喆)" data-cover="image/albums/pu-tong-peng-you.jpg" tabindex="0" role="button" aria-label="Play Pu Tong Peng You by David Tao">
+              <div class="song-card-art">
+                <img src="image/albums/pu-tong-peng-you.jpg" alt="Album cover for I'm OK by David Tao, featuring the song Pu Tong Peng You (Regular Friends)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Pu Tong Peng You (普通朋友)</h4>
+                <p class="song-artist">David Tao (陶喆)</p>
+                <p class="song-album">Album: I'm OK, 1999</p>
+              </div>
+              <button class="play-btn" aria-label="Play Pu Tong Peng You by David Tao on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="3Xj6QoLmoF0" data-title="Wo Huai Nian De (我怀念的)" data-artist="Stefanie Sun (孙燕姿)" data-cover="image/albums/wo-huai-nian-de.jpg" tabindex="0" role="button" aria-label="Play Wo Huai Nian De by Stefanie Sun">
+              <div class="song-card-art">
+                <img src="image/albums/wo-huai-nian-de.jpg" alt="Album cover for Against the Light by Stefanie Sun, featuring the song Wo Huai Nian De (What I Miss)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Wo Huai Nian De (我怀念的)</h4>
+                <p class="song-artist">Stefanie Sun (孙燕姿)</p>
+                <p class="song-album">Album: Against the Light (逆光), 2007</p>
+              </div>
+              <button class="play-btn" aria-label="Play Wo Huai Nian De by Stefanie Sun on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="QMUrR-asqMU" data-title="Duan Qiao Can Xue (断桥残雪)" data-artist="Vae / Xu Song (许嵩)" data-cover="image/albums/duan-qiao-can-xue.jpg" tabindex="0" role="button" aria-label="Play Duan Qiao Can Xue by Xu Song">
+              <div class="song-card-art">
+                <img src="image/albums/duan-qiao-can-xue.jpg" alt="Album cover for Custom by Xu Song (Vae), featuring the poetic track Duan Qiao Can Xue" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Duan Qiao Can Xue (断桥残雪)</h4>
+                <p class="song-artist">Vae / Xu Song (许嵩)</p>
+                <p class="song-album">From album "Custom (自定义)," 2009</p>
+              </div>
+              <button class="play-btn" aria-label="Play Duan Qiao Can Xue by Xu Song on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="GHXr4bBxHCo" data-title="Pao Mo (泡沫)" data-artist="G.E.M. (邓紫棋)" data-cover="image/albums/pao-mo.jpg" tabindex="0" role="button" aria-label="Play Pao Mo by G.E.M.">
+              <div class="song-card-art">
+                <img src="image/albums/pao-mo.jpg" alt="Album cover for Xposed by G.E.M., featuring the emotional ballad Pao Mo (Bubble)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Pao Mo (泡沫)</h4>
+                <p class="song-artist">G.E.M. (邓紫棋)</p>
+                <p class="song-album">Album: Xposed, 2012</p>
+              </div>
+              <button class="play-btn" aria-label="Play Pao Mo by G.E.M. on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="RSaDxpEkOPY" data-title="Yan Yuan (演员)" data-artist="Joker Xue (薛之谦)" data-cover="image/albums/yan-yuan.jpg" tabindex="0" role="button" aria-label="Play Yan Yuan by Joker Xue">
+              <div class="song-card-art">
+                <img src="image/albums/yan-yuan.jpg" alt="Album cover for Joker Xue single Yan Yuan (Actor), his 2015 viral comeback hit" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Yan Yuan (演员)</h4>
+                <p class="song-artist">Joker Xue (薛之谦)</p>
+                <p class="song-album">Viral comeback mega-hit, 2015</p>
+              </div>
+              <button class="play-btn" aria-label="Play Yan Yuan by Joker Xue on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+        <!-- Happy / Road Trip -->
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon happy" aria-hidden="true">&#9728;&#65039;</div>
+            <div>
+              <h3>Happy &amp; Road Trip</h3>
+              <p>Upbeat tracks perfect for sunny drives and good times.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="vURccH4eixE" data-title="Dao Xiang (稻香)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/dao-xiang.jpg" tabindex="0" role="button" aria-label="Play Dao Xiang by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/dao-xiang.jpg" alt="Album cover for Capricorn by Jay Chou, featuring the song Dao Xiang (Rice Fragrance)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Dao Xiang (稻香)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Capricorn (魔杰座), 2008</p>
+              </div>
+              <button class="play-btn" aria-label="Play Dao Xiang by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="pztQtHvZkRc" data-title="Lv Guang (绿光)" data-artist="Stefanie Sun (孙燕姿)" data-cover="image/albums/lv-guang.jpg" tabindex="0" role="button" aria-label="Play Lv Guang by Stefanie Sun">
+              <div class="song-card-art">
+                <img src="image/albums/lv-guang.jpg" alt="Album cover for My Desired Happiness by Stefanie Sun, featuring the song Lv Guang (Green Light)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Lv Guang (绿光)</h4>
+                <p class="song-artist">Stefanie Sun (孙燕姿)</p>
+                <p class="song-album">Album: My Desired Happiness, 2001</p>
+              </div>
+              <button class="play-btn" aria-label="Play Lv Guang by Stefanie Sun on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="812omgU1tHs" data-title="Ai Ai Ai (爱爱爱)" data-artist="Khalil Fong (方大同)" data-cover="image/albums/ai-ai-ai.jpg" tabindex="0" role="button" aria-label="Play Ai Ai Ai by Khalil Fong">
+              <div class="song-card-art">
+                <img src="image/albums/ai-ai-ai.jpg" alt="Album cover for This Love by Khalil Fong, featuring the song Ai Ai Ai" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ai Ai Ai (爱爱爱)</h4>
+                <p class="song-artist">Khalil Fong (方大同)</p>
+                <p class="song-album">Album: This Love (爱爱爱), 2006</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ai Ai Ai by Khalil Fong on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="-gaB9ov-Om0" data-title="A.I.N.Y." data-artist="G.E.M. (邓紫棋)" data-cover="image/albums/ainy.jpg" tabindex="0" role="button" aria-label="Play A.I.N.Y. by G.E.M.">
+              <div class="song-card-art">
+                <img src="image/albums/ainy.jpg" alt="Album cover for 18... by G.E.M., featuring the song A.I.N.Y." loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>A.I.N.Y.</h4>
+                <p class="song-artist">G.E.M. (邓紫棋)</p>
+                <p class="song-album">Album: 18..., 2009</p>
+              </div>
+              <button class="play-btn" aria-label="Play A.I.N.Y. by G.E.M. on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="bu7nU9Mhpyo" data-title="Gao Bai Qi Qiu (告白气球)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/gao-bai-qi-qiu.jpg" tabindex="0" role="button" aria-label="Play Gao Bai Qi Qiu by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/gao-bai-qi-qiu.jpg" alt="Album cover for Jay Chou's Bedtime Stories, featuring the romantic hit Gao Bai Qi Qiu" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Gao Bai Qi Qiu (告白气球)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Bedtime Stories (床边故事), 2016</p>
+              </div>
+              <button class="play-btn" aria-label="Play Gao Bai Qi Qiu by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="xI9iM1pJZ4w" data-title="Xiao Xing Xing (小星星)" data-artist="Silence Wang (汪苏泷)" data-cover="image/albums/xiao-xing-xing.jpg" tabindex="0" role="button" aria-label="Play Xiao Xing Xing by Silence Wang">
+              <div class="song-card-art">
+                <img src="image/albums/xiao-xing-xing.jpg" alt="Album cover for Slowly Understand by Silence Wang, featuring the viral Xiao Xing Xing" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Xiao Xing Xing (小星星)</h4>
+                <p class="song-artist">Silence Wang (汪苏泷)</p>
+                <p class="song-album">Album: Slowly Understand (慢慢懂), 2010</p>
+              </div>
+              <button class="play-btn" aria-label="Play Xiao Xing Xing by Silence Wang on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+        <!-- Late Night Vibes -->
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon night" aria-hidden="true">&#127769;</div>
+            <div>
+              <h3>Late Night Vibes</h3>
+              <p>Atmospheric and introspective tracks for those quiet hours.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="6Q0Pd53mojY" data-title="Ye Qu (夜曲)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/ye-qu.jpg" tabindex="0" role="button" aria-label="Play Ye Qu by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/ye-qu.jpg" alt="Album cover for November's Chopin by Jay Chou, featuring the song Ye Qu (Nocturne)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ye Qu (夜曲)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: November's Chopin (十一月的肖邦), 2005</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ye Qu by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="txsdlO2DP34" data-title="Gu Du Huan Zhe (孤独患者)" data-artist="Eason Chan (陈奕迅)" data-cover="image/albums/gu-du-huan-zhe.jpg" tabindex="0" role="button" aria-label="Play Gu Du Huan Zhe by Eason Chan">
+              <div class="song-card-art">
+                <img src="image/albums/gu-du-huan-zhe.jpg" alt="Album cover for the Question Mark album by Eason Chan, featuring the song Gu Du Huan Zhe" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Gu Du Huan Zhe (孤独患者)</h4>
+                <p class="song-artist">Eason Chan (陈奕迅)</p>
+                <p class="song-album">Album: ? (Stranger Under My Skin), 2011</p>
+              </div>
+              <button class="play-btn" aria-label="Play Gu Du Huan Zhe by Eason Chan on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="LWV-f6dMN3Q" data-title="Xiu Lian Ai Qing (修炼爱情)" data-artist="JJ Lin (林俊杰)" data-cover="image/albums/xiu-lian-ai-qing.jpg" tabindex="0" role="button" aria-label="Play Xiu Lian Ai Qing by JJ Lin">
+              <div class="song-card-art">
+                <img src="image/albums/xiu-lian-ai-qing.jpg" alt="Album cover for Stories Untold by JJ Lin, featuring the song Xiu Lian Ai Qing (Practice Love)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Xiu Lian Ai Qing (修炼爱情)</h4>
+                <p class="song-artist">JJ Lin (林俊杰)</p>
+                <p class="song-album">Album: Stories Untold (因你而在), 2013</p>
+              </div>
+              <button class="play-btn" aria-label="Play Xiu Lian Ai Qing by JJ Lin on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="IscPlLsh6iU" data-title="Te Bie De Ren (特别的人)" data-artist="Khalil Fong (方大同)" data-cover="image/albums/te-bie-de-ren.jpg" tabindex="0" role="button" aria-label="Play Te Bie De Ren by Khalil Fong">
+              <div class="song-card-art">
+                <img src="image/albums/te-bie-de-ren.jpg" alt="Album cover for Dangerous World by Khalil Fong, featuring the song Te Bie De Ren (Special Person)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Te Bie De Ren (特别的人)</h4>
+                <p class="song-artist">Khalil Fong (方大同)</p>
+                <p class="song-album">Album: Dangerous World, 2014</p>
+              </div>
+              <button class="play-btn" aria-label="Play Te Bie De Ren by Khalil Fong on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="CHedAlMcaW4" data-title="Su Yan (素颜)" data-artist="Vae / Xu Song (许嵩) ft. He Manting" data-cover="image/albums/su-yan.jpg" tabindex="0" role="button" aria-label="Play Su Yan by Xu Song">
+              <div class="song-card-art">
+                <img src="image/albums/su-yan.jpg" alt="Album cover for Xu Song (Vae), featuring the charming duet Su Yan (Bare Face)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Su Yan (素颜)</h4>
+                <p class="song-artist">Vae / Xu Song (许嵩) ft. He Manting</p>
+                <p class="song-album">Internet music era classic, 2010</p>
+              </div>
+              <button class="play-btn" aria-label="Play Su Yan by Xu Song on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="oTG_6WKh_4c" data-title="Bu Fen Shou De Lian Ai (不分手的恋爱)" data-artist="Silence Wang (汪苏泷)" data-cover="image/albums/bu-fen-shou.jpg" tabindex="0" role="button" aria-label="Play Bu Fen Shou De Lian Ai by Silence Wang">
+              <div class="song-card-art">
+                <img src="image/albums/bu-fen-shou.jpg" alt="Album cover for Silence Wang, featuring the campus love anthem Bu Fen Shou De Lian Ai" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Bu Fen Shou De Lian Ai (不分手的恋爱)</h4>
+                <p class="song-artist">Silence Wang (汪苏泷)</p>
+                <p class="song-album">QQ Music #1 hit, 2011</p>
+              </div>
+              <button class="play-btn" aria-label="Play Bu Fen Shou De Lian Ai by Silence Wang on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+        <!-- Study & Focus -->
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon focus" aria-hidden="true">&#128218;</div>
+            <div>
+              <h3>Study &amp; Focus</h3>
+              <p>Gentle melodies that help you concentrate without distraction.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="Z8Mqw0b9ADs" data-title="Qing Hua Ci (青花瓷)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/qing-hua-ci.jpg" tabindex="0" role="button" aria-label="Play Qing Hua Ci by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/qing-hua-ci.jpg" alt="Album cover for On the Run by Jay Chou, featuring the song Qing Hua Ci (Blue and White Porcelain)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Qing Hua Ci (青花瓷)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: On the Run (我很忙), 2007</p>
+              </div>
+              <button class="play-btn" aria-label="Play Qing Hua Ci by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="G97_rOdHcnY" data-title="Jiang Nan (江南)" data-artist="JJ Lin (林俊杰)" data-cover="image/albums/jiang-nan.jpg" tabindex="0" role="button" aria-label="Play Jiang Nan by JJ Lin">
+              <div class="song-card-art">
+                <img src="image/albums/jiang-nan.jpg" alt="Album cover for Second Heaven by JJ Lin, featuring the song Jiang Nan (River South)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Jiang Nan (江南)</h4>
+                <p class="song-artist">JJ Lin (林俊杰)</p>
+                <p class="song-album">Album: Second Heaven (第二天堂), 2004</p>
+              </div>
+              <button class="play-btn" aria-label="Play Jiang Nan by JJ Lin on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="P7Qv4AV_StM" data-title="Wei Yi (唯一)" data-artist="Wang Leehom (王力宏)" data-cover="image/albums/wei-yi.jpg" tabindex="0" role="button" aria-label="Play Wei Yi by Wang Leehom">
+              <div class="song-card-art">
+                <img src="image/albums/wei-yi.jpg" alt="Album cover for The Only One by Wang Leehom, featuring the song Wei Yi" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Wei Yi (唯一)</h4>
+                <p class="song-artist">Wang Leehom (王力宏)</p>
+                <p class="song-album">Album: The Only One (唯一), 2001</p>
+              </div>
+              <button class="play-btn" aria-label="Play Wei Yi by Wang Leehom on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="zi8z6RPYGV0" data-title="Tian Hei Hei (天黑黑)" data-artist="Stefanie Sun (孙燕姿)" data-cover="image/albums/tian-hei-hei.jpg" tabindex="0" role="button" aria-label="Play Tian Hei Hei by Stefanie Sun">
+              <div class="song-card-art">
+                <img src="image/albums/tian-hei-hei.jpg" alt="Album cover for the self-titled debut album by Stefanie Sun, featuring the song Tian Hei Hei (Cloudy Day)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Tian Hei Hei (天黑黑)</h4>
+                <p class="song-artist">Stefanie Sun (孙燕姿)</p>
+                <p class="song-album">Album: Yan Zi (孙燕姿同名专辑), 2000</p>
+              </div>
+              <button class="play-btn" aria-label="Play Tian Hei Hei by Stefanie Sun on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PANEL: 古风 Chinese Classical -->
+    <section class="picks-panel" id="panel-gufeng" role="tabpanel" aria-labelledby="tab-gufeng" hidden style="padding-top: 20px;">
+      <div class="section-container">
+
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon gufeng" aria-hidden="true">&#127912;</div>
+            <div>
+              <h3>古风 Chinese Classical Style</h3>
+              <p>Songs that blend traditional Chinese instruments, poetic lyrics, and ancient imagery with modern pop production. Jay Chou and Fang Wenshan pioneered this genre.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="qct0JLjaHDc" data-title="Dong Feng Po (东风破)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/dong-feng-po.jpg" tabindex="0" role="button" aria-label="Play Dong Feng Po by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/dong-feng-po.jpg" alt="Album cover for Ye Hui Mei by Jay Chou, featuring the ancient-style ballad Dong Feng Po" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Dong Feng Po (东风破)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Ye Hui Mei (叶惠美), 2003</p>
+              </div>
+              <button class="play-btn" aria-label="Play Dong Feng Po by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="aaM7qG2ycjk" data-title="Fa Ru Xue (发如雪)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/fa-ru-xue.jpg" tabindex="0" role="button" aria-label="Play Fa Ru Xue by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/fa-ru-xue.jpg" alt="Album cover for November's Chopin by Jay Chou, featuring the Chinese classical ballad Fa Ru Xue (Hair White as Snow)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Fa Ru Xue (发如雪)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: November's Chopin (十一月的萧邦), 2005</p>
+              </div>
+              <button class="play-btn" aria-label="Play Fa Ru Xue by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="PdjbRvvJAzg" data-title="Ju Hua Tai (菊花台)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/ju-hua-tai.jpg" tabindex="0" role="button" aria-label="Play Ju Hua Tai by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/ju-hua-tai.jpg" alt="Album cover for Still Fantasy by Jay Chou, featuring the Curse of the Golden Flower movie theme Ju Hua Tai" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ju Hua Tai (菊花台)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Still Fantasy (依然范特西), 2006</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ju Hua Tai by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="sIPEStJCh2Q" data-title="Qing Hua Ci (青花瓷)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/qing-hua-ci.jpg" tabindex="0" role="button" aria-label="Play Qing Hua Ci by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/qing-hua-ci.jpg" alt="Album cover for On the Run by Jay Chou, featuring the iconic Chinese classical piece Qing Hua Ci (Blue and White Porcelain)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Qing Hua Ci (青花瓷)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: On the Run (我很忙), 2007</p>
+              </div>
+              <button class="play-btn" aria-label="Play Qing Hua Ci by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="s5Xl5MXboas" data-title="Lan Ting Xu (兰亭序)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/lan-ting-xu.jpg" tabindex="0" role="button" aria-label="Play Lan Ting Xu by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/lan-ting-xu.jpg" alt="Album cover for The Era by Jay Chou, featuring the calligraphy-inspired Lan Ting Xu" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Lan Ting Xu (兰亭序)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: The Era (魔杰座), 2008</p>
+              </div>
+              <button class="play-btn" aria-label="Play Lan Ting Xu by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="pOkpVo69DvU" data-title="Qing Ming Yu Shang (清明雨上)" data-artist="Xu Song / Vae (许嵩)" data-cover="image/albums/qing-ming-yu-shang.jpg" tabindex="0" role="button" aria-label="Play Qing Ming Yu Shang by Xu Song">
+              <div class="song-card-art">
+                <img src="image/albums/qing-ming-yu-shang.jpg" alt="Album cover for Xu Song (Vae), featuring the poetic Chinese classical ballad Qing Ming Yu Shang" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Qing Ming Yu Shang (清明雨上)</h4>
+                <p class="song-artist">Xu Song / Vae (许嵩)</p>
+                <p class="song-album">Self-released internet single, 2009</p>
+              </div>
+              <button class="play-btn" aria-label="Play Qing Ming Yu Shang by Xu Song on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="Lg4ur4CcrYU" data-title="Lu Zhou Yue (庐州月)" data-artist="Xu Song / Vae (许嵩)" data-cover="image/albums/lu-zhou-yue.jpg" tabindex="0" role="button" aria-label="Play Lu Zhou Yue by Xu Song">
+              <div class="song-card-art">
+                <img src="image/albums/lu-zhou-yue.jpg" alt="Album cover for Xu Song (Vae) album featuring Lu Zhou Yue, a nostalgic Chinese-style ballad about hometown" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Lu Zhou Yue (庐州月)</h4>
+                <p class="song-artist">Xu Song / Vae (许嵩)</p>
+                <p class="song-album">A nostalgic ode to Hefei under moonlight, 2009</p>
+              </div>
+              <button class="play-btn" aria-label="Play Lu Zhou Yue by Xu Song on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="LM953v7mDPo" data-title="Duan Qiao Can Xue (断桥残雪)" data-artist="Xu Song / Vae (许嵩)" data-cover="image/albums/duan-qiao-can-xue.jpg" tabindex="0" role="button" aria-label="Play Duan Qiao Can Xue by Xu Song">
+              <div class="song-card-art">
+                <img src="image/albums/duan-qiao-can-xue.jpg" alt="Album cover for Xu Song (Vae), featuring the West Lake-inspired classical piece Duan Qiao Can Xue" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Duan Qiao Can Xue (断桥残雪)</h4>
+                <p class="song-artist">Xu Song / Vae (许嵩)</p>
+                <p class="song-album">Inspired by West Lake's Broken Bridge, 2008</p>
+              </div>
+              <button class="play-btn" aria-label="Play Duan Qiao Can Xue by Xu Song on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PANEL: 说唱 Rap & Hip-Hop -->
+    <section class="picks-panel" id="panel-rap" role="tabpanel" aria-labelledby="tab-rap" hidden style="padding-top: 20px;">
+      <div class="section-container">
+
+        <div class="mood-section fade-in">
+          <div class="mood-header">
+            <div class="mood-icon rap" aria-hidden="true">&#127908;</div>
+            <div>
+              <h3>说唱 Rap &amp; Hip-Hop</h3>
+              <p>Jay Chou brought rap to mainstream Mandopop — fast flows, clever wordplay, and genre-blending beats. These tracks showcase his incredible rap skills.</p>
+            </div>
+          </div>
+          <div class="song-cards">
+            <article class="song-card" data-youtube="OR-0wptI_u0" data-title="Shuang Jie Gun (双截棍)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/shuang-jie-gun.jpg" tabindex="0" role="button" aria-label="Play Shuang Jie Gun by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/shuang-jie-gun.jpg" alt="Album cover for Fantasy by Jay Chou, featuring the martial-arts rap Shuang Jie Gun (Nunchucks)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Shuang Jie Gun (双截棍)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Fantasy (范特西), 2001</p>
+              </div>
+              <button class="play-btn" aria-label="Play Shuang Jie Gun by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="_byK6M95hTc" data-title="Long Quan (龙拳)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/long-quan.jpg" tabindex="0" role="button" aria-label="Play Long Quan by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/long-quan.jpg" alt="Album cover for The Eight Dimensions by Jay Chou, featuring the patriotic rap Long Quan (Dragon Fist)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Long Quan (龙拳)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: The Eight Dimensions (八度空间), 2002</p>
+              </div>
+              <button class="play-btn" aria-label="Play Long Quan by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="9q7JOQfcJQM" data-title="Yi Fu Zhi Ming (以父之名)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/yi-fu-zhi-ming.jpg" tabindex="0" role="button" aria-label="Play Yi Fu Zhi Ming by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/yi-fu-zhi-ming.jpg" alt="Album cover for Ye Hui Mei by Jay Chou, featuring the dark cinematic rap Yi Fu Zhi Ming (In The Name of The Father)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Yi Fu Zhi Ming (以父之名)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Ye Hui Mei (叶惠美), 2003</p>
+              </div>
+              <button class="play-btn" aria-label="Play Yi Fu Zhi Ming by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="Ur-x4pZT1Rk" data-title="Wai Po (外婆)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/wai-po.jpg" tabindex="0" role="button" aria-label="Play Wai Po by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/wai-po.jpg" alt="Album cover for Ye Hui Mei by Jay Chou, featuring the heartfelt rap Wai Po (Grandma) about family love" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Wai Po (外婆)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Ye Hui Mei (叶惠美), 2003</p>
+              </div>
+              <button class="play-btn" aria-label="Play Wai Po by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="PaJdceSx4JA" data-title="Jiang Jun (将军)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/jiang-jun.jpg" tabindex="0" role="button" aria-label="Play Jiang Jun by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/jiang-jun.jpg" alt="Album cover for Still Fantasy by Jay Chou, featuring the chess-themed rapid-fire rap Jiang Jun (General / Checkmate)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Jiang Jun (将军)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Still Fantasy (依然范特西), 2006</p>
+              </div>
+              <button class="play-btn" aria-label="Play Jiang Jun by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="8CD06hC1KGU" data-title="Ben Cao Gang Mu (本草纲目)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/ben-cao-gang-mu.jpg" tabindex="0" role="button" aria-label="Play Ben Cao Gang Mu by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/ben-cao-gang-mu.jpg" alt="Album cover for Still Fantasy by Jay Chou, featuring the traditional Chinese medicine rap Ben Cao Gang Mu (Compendium of Materia Medica)" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Ben Cao Gang Mu (本草纲目)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Album: Still Fantasy (依然范特西), 2006</p>
+              </div>
+              <button class="play-btn" aria-label="Play Ben Cao Gang Mu by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+            <article class="song-card" data-youtube="OUSGusLIfx8" data-title="Huo Yuan Jia (霍元甲)" data-artist="Jay Chou (周杰伦)" data-cover="image/albums/huo-yuan-jia.jpg" tabindex="0" role="button" aria-label="Play Huo Yuan Jia by Jay Chou">
+              <div class="song-card-art">
+                <img src="image/albums/huo-yuan-jia.jpg" alt="Album cover for Jay Chou's Fearless movie theme single Huo Yuan Jia, a kung fu-inspired rap track" loading="lazy">
+                <div class="play-icon-overlay" aria-hidden="true"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div>
+              </div>
+              <div class="song-card-info">
+                <h4>Huo Yuan Jia (霍元甲)</h4>
+                <p class="song-artist">Jay Chou (周杰伦)</p>
+                <p class="song-album">Fearless movie theme single, 2006</p>
+              </div>
+              <button class="play-btn" aria-label="Play Huo Yuan Jia by Jay Chou on YouTube"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></button>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- YouTube Player Modal -->
+  <div class="player-modal-overlay" id="playerModal" role="dialog" aria-modal="true" aria-label="Music player">
+    <div class="player-modal">
+      <div class="player-modal-header">
+        <div class="modal-song-info">
+          <div class="modal-album-art">
+            <img id="modalAlbumArt" src="" alt="Album cover for the currently playing song">
+          </div>
+          <div class="modal-text">
+            <h3 id="modalSongTitle"></h3>
+            <p id="modalArtistName"></p>
+          </div>
+        </div>
+        <button class="player-modal-close" id="modalClose" aria-label="Close music player">&times;</button>
+      </div>
+      <div class="player-modal-body">
+        <iframe id="youtubePlayer" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="YouTube video player for the selected song"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top of page">&#9650;</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">Mandopop Guide</div>
+      <p>A project by Zhongguo He for SI 539 — Web Accessibility.<br>
+      Artist photos sourced from Wikimedia Commons under Creative Commons licenses.<br>
+      Some artist images use album covers from Apple Music.<br>
+      Album cover images sourced from Apple Music for educational purposes.</p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="artists.html">Artists</a>
+        <a href="recommendations.html">Picks</a>
+        <a href="eras.html">Eras</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
