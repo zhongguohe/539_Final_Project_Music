@@ -169,16 +169,51 @@
     });
   }
 
-  /* ---------- Carousel Pause on Focus (Accessibility) ---------- */
+  /* ---------- Carousel Pause / Play Button ---------- */
   var carouselTrack = document.querySelector('.carousel-track');
+  var carouselPauseBtn = document.getElementById('carouselPauseBtn');
+  var carouselPaused = false;
 
-  if (carouselTrack) {
+  if (carouselTrack && carouselPauseBtn) {
+    // Pause on focus for keyboard users
     carouselTrack.addEventListener('focusin', function () {
-      carouselTrack.style.animationPlayState = 'paused';
+      carouselTrack.classList.add('paused');
     });
     carouselTrack.addEventListener('focusout', function () {
-      carouselTrack.style.animationPlayState = 'running';
+      if (!carouselPaused) {
+        carouselTrack.classList.remove('paused');
+      }
     });
+
+    // Pause / Play toggle button
+    carouselPauseBtn.addEventListener('click', function () {
+      carouselPaused = !carouselPaused;
+      var pauseIcon = carouselPauseBtn.querySelector('.pause-icon');
+      var playIcon = carouselPauseBtn.querySelector('.play-icon');
+
+      if (carouselPaused) {
+        carouselTrack.classList.add('paused');
+        carouselPauseBtn.setAttribute('aria-label', 'Play carousel animation');
+        if (pauseIcon) pauseIcon.hidden = true;
+        if (playIcon) playIcon.hidden = false;
+      } else {
+        carouselTrack.classList.remove('paused');
+        carouselPauseBtn.setAttribute('aria-label', 'Pause carousel animation');
+        if (pauseIcon) pauseIcon.hidden = false;
+        if (playIcon) playIcon.hidden = true;
+      }
+    });
+
+    // Auto-pause if user prefers reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      carouselPaused = true;
+      carouselTrack.classList.add('paused');
+      carouselPauseBtn.setAttribute('aria-label', 'Play carousel animation');
+      var pi = carouselPauseBtn.querySelector('.pause-icon');
+      var pli = carouselPauseBtn.querySelector('.play-icon');
+      if (pi) pi.hidden = true;
+      if (pli) pli.hidden = false;
+    }
   }
 
   /* ---------- YouTube Player Modal ---------- */
@@ -201,7 +236,7 @@
 
     if (!videoId) return;
 
-    lastFocusedElement = card;
+    lastFocusedElement = card.querySelector('.play-btn') || card;
 
     if (modalSongTitle) modalSongTitle.textContent = title || '';
     if (modalArtistName) modalArtistName.textContent = artist || '';
@@ -237,10 +272,17 @@
 
   if (songCards.length > 0) {
     songCards.forEach(function (card) {
+      // Make the whole card focusable and announce as a button
+      card.setAttribute('tabindex', '0');
+      card.setAttribute('role', 'button');
+      var title = card.getAttribute('data-title') || '';
+      var artist = card.getAttribute('data-artist') || '';
+      if (title && artist) {
+        card.setAttribute('aria-label', 'Play ' + title + ' by ' + artist);
+      }
+
       // Click on the card itself
-      card.addEventListener('click', function (e) {
-        // Prevent double-trigger from play button
-        if (e.target.closest('.play-btn')) return;
+      card.addEventListener('click', function () {
         openPlayer(card);
       });
 
@@ -251,15 +293,6 @@
           openPlayer(card);
         }
       });
-
-      // Play button inside the card
-      var playBtn = card.querySelector('.play-btn');
-      if (playBtn) {
-        playBtn.addEventListener('click', function (e) {
-          e.stopPropagation();
-          openPlayer(card);
-        });
-      }
     });
   }
 

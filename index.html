@@ -16,7 +16,7 @@
   <!-- Navigation -->
   <nav class="navbar" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="index.html" class="nav-logo">Mandopop Guide</a>
+      <a href="index.html" class="nav-logo" aria-label="Mandopop Guide homepage">Mandopop Guide</a>
       <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span>
         <span></span>
@@ -57,8 +57,12 @@
           <p>Meet the legendary voices shaping Chinese pop music across generations.</p>
         </div>
       </div>
-      <div class="carousel-track-wrapper" aria-label="Scrolling artist cards">
-        <div class="carousel-track" aria-hidden="true">
+      <div class="carousel-track-wrapper" role="region" aria-label="Scrolling artist cards" aria-roledescription="carousel">
+        <button class="carousel-pause-btn" id="carouselPauseBtn" aria-label="Pause carousel animation">
+          <span class="pause-icon" aria-hidden="true">&#9208;</span>
+          <span class="play-icon" aria-hidden="true" hidden>&#9654;</span>
+        </button>
+        <div class="carousel-track" id="carouselTrack">
           <!-- First set -->
           <article class="artist-card">
             <div class="artist-card-img">
@@ -77,7 +81,7 @@
             <div class="artist-card-info">
               <h3>Wang Leehom</h3>
               <p class="artist-cn">王力宏</p>
-              <p>Created "chinked-out" music, fusing Chinese traditional sounds with pop, hip-hop, and R&B.</p>
+              <p>A pioneer of East-meets-West fusion, blending Chinese traditional sounds with pop, hip-hop, and R&B.</p>
             </div>
           </article>
           <article class="artist-card">
@@ -122,7 +126,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/khalil-fong.jpg" alt="Khalil Fong (方大同) speaking into a microphone at an awards ceremony, wearing a striped suit and hat with glasses" loading="lazy">
+              <img src="image/khalil-fong.jpg" alt="Khalil Fong (方大同) at an awards ceremony" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Khalil Fong</h3>
@@ -132,7 +136,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/eason-chan.jpg" alt="Eason Chan (陈奕迅) smiling and holding an award trophy at a CCTV-MTV music awards ceremony, wearing a red shirt" loading="lazy">
+              <img src="image/eason-chan.jpg" alt="Eason Chan (陈奕迅) holding an award trophy" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Eason Chan</h3>
@@ -152,7 +156,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/xu-song.jpg" alt="Xu Song (许嵩/Vae) on the cover of his album Sought and Got, sitting on a white piano by the seaside" loading="lazy">
+              <img src="image/xu-song.jpg" alt="Xu Song (许嵩/Vae) album cover for Sought and Got" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Xu Song (Vae)</h3>
@@ -162,7 +166,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/silence-wang.jpg" alt="Silence Wang (汪苏泷) on the cover of his album Legendary Movement, wearing large round glasses with steampunk-style background" loading="lazy">
+              <img src="image/silence-wang.jpg" alt="Silence Wang (汪苏泷) album cover for Legendary Movement" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Silence Wang</h3>
@@ -172,7 +176,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/xu-liang.jpg" alt="Xu Liang (徐良) on the cover of his album Bad Boy, wearing an orange jumpsuit in a stylized floating pose" loading="lazy">
+              <img src="image/xu-liang.jpg" alt="Xu Liang (徐良) album cover for Bad Boy" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Xu Liang</h3>
@@ -210,7 +214,38 @@
               <p>From underdog to megastar — his comeback hit "Actor" defined a generation of Chinese ballads.</p>
             </div>
           </article>
-          <!-- Duplicate set for seamless loop -->
+          <article class="artist-card">
+            <div class="artist-card-img">
+              <img src="image/mc-hotdog.jpg" alt="MC HotDog (热狗), Taiwanese rap pioneer" loading="lazy">
+            </div>
+            <div class="artist-card-info">
+              <h3>MC HotDog</h3>
+              <p class="artist-cn">热狗</p>
+              <p>A founding father of Chinese-language rap, known for raw, satirical lyrics about everyday life.</p>
+            </div>
+          </article>
+          <article class="artist-card">
+            <div class="artist-card-img">
+              <img src="image/wilber-pan.jpg" alt="Wilber Pan (潘玮柏), Mandopop rapper" loading="lazy">
+            </div>
+            <div class="artist-card-info">
+              <h3>Wilber Pan</h3>
+              <p class="artist-cn">潘玮柏</p>
+              <p>Chinese-American rapper who brought hip-hop swagger into mainstream Mandopop.</p>
+            </div>
+          </article>
+          <article class="artist-card">
+            <div class="artist-card-img">
+              <img src="image/gai.jpg" alt="GAI (GAI周延), Chinese rapper from Chongqing" loading="lazy">
+            </div>
+            <div class="artist-card-info">
+              <h3>GAI</h3>
+              <p class="artist-cn">GAI周延</p>
+              <p>Chongqing rapper who won The Rap of China, fusing dialect, tradition, and hard-hitting flows.</p>
+            </div>
+          </article>
+          <!-- Duplicate set for seamless loop (hidden from assistive tech) -->
+          <div class="carousel-duplicate" aria-hidden="true">
           <article class="artist-card">
             <div class="artist-card-img">
               <img src="image/jay-chou.jpg" alt="Portrait photo of Jay Chou (周杰伦), Taiwanese singer-songwriter known as the King of Mandopop" loading="lazy">
@@ -228,7 +263,7 @@
             <div class="artist-card-info">
               <h3>Wang Leehom</h3>
               <p class="artist-cn">王力宏</p>
-              <p>Created "chinked-out" music, fusing Chinese traditional sounds with pop, hip-hop, and R&B.</p>
+              <p>A pioneer of East-meets-West fusion, blending Chinese traditional sounds with pop, hip-hop, and R&B.</p>
             </div>
           </article>
           <article class="artist-card">
@@ -273,7 +308,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/khalil-fong.jpg" alt="Khalil Fong (方大同) speaking into a microphone at an awards ceremony, wearing a striped suit and hat with glasses" loading="lazy">
+              <img src="image/khalil-fong.jpg" alt="Khalil Fong (方大同) at an awards ceremony" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Khalil Fong</h3>
@@ -283,7 +318,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/eason-chan.jpg" alt="Eason Chan (陈奕迅) smiling and holding an award trophy at a CCTV-MTV music awards ceremony, wearing a red shirt" loading="lazy">
+              <img src="image/eason-chan.jpg" alt="Eason Chan (陈奕迅) holding an award trophy" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Eason Chan</h3>
@@ -303,7 +338,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/xu-song.jpg" alt="Xu Song (许嵩/Vae) on the cover of his album Sought and Got, sitting on a white piano by the seaside" loading="lazy">
+              <img src="image/xu-song.jpg" alt="Xu Song (许嵩/Vae) album cover for Sought and Got" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Xu Song (Vae)</h3>
@@ -313,7 +348,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/silence-wang.jpg" alt="Silence Wang (汪苏泷) on the cover of his album Legendary Movement, wearing large round glasses with steampunk-style background" loading="lazy">
+              <img src="image/silence-wang.jpg" alt="Silence Wang (汪苏泷) album cover for Legendary Movement" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Silence Wang</h3>
@@ -323,7 +358,7 @@
           </article>
           <article class="artist-card">
             <div class="artist-card-img">
-              <img src="image/xu-liang.jpg" alt="Xu Liang (徐良) on the cover of his album Bad Boy, wearing an orange jumpsuit in a stylized floating pose" loading="lazy">
+              <img src="image/xu-liang.jpg" alt="Xu Liang (徐良) album cover for Bad Boy" loading="lazy">
             </div>
             <div class="artist-card-info">
               <h3>Xu Liang</h3>
@@ -361,6 +396,37 @@
               <p>From underdog to megastar — his comeback hit "Actor" defined a generation of Chinese ballads.</p>
             </div>
           </article>
+          <article class="artist-card">
+            <div class="artist-card-img">
+              <img src="image/mc-hotdog.jpg" alt="MC HotDog (热狗), Taiwanese rap pioneer" loading="lazy">
+            </div>
+            <div class="artist-card-info">
+              <h3>MC HotDog</h3>
+              <p class="artist-cn">热狗</p>
+              <p>A founding father of Chinese-language rap, known for raw, satirical lyrics about everyday life.</p>
+            </div>
+          </article>
+          <article class="artist-card">
+            <div class="artist-card-img">
+              <img src="image/wilber-pan.jpg" alt="Wilber Pan (潘玮柏), Mandopop rapper" loading="lazy">
+            </div>
+            <div class="artist-card-info">
+              <h3>Wilber Pan</h3>
+              <p class="artist-cn">潘玮柏</p>
+              <p>Chinese-American rapper who brought hip-hop swagger into mainstream Mandopop.</p>
+            </div>
+          </article>
+          <article class="artist-card">
+            <div class="artist-card-img">
+              <img src="image/gai.jpg" alt="GAI (GAI周延), Chinese rapper from Chongqing" loading="lazy">
+            </div>
+            <div class="artist-card-info">
+              <h3>GAI</h3>
+              <p class="artist-cn">GAI周延</p>
+              <p>Chongqing rapper who won The Rap of China, fusing dialect, tradition, and hard-hitting flows.</p>
+            </div>
+          </article>
+          </div><!-- /.carousel-duplicate -->
         </div>
       </div>
     </section>
