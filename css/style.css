@@ -1,4 +1,3 @@
-/* ===== CSS Custom Properties ===== */
 :root {
   --color-bg: #0a0a0f;
   --color-bg-secondary: #12121a;
@@ -26,7 +25,6 @@
   --max-width: 1200px;
 }
 
-/* ===== Reset & Base ===== */
 *,
 *::before,
 *::after {
@@ -81,7 +79,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-/* ===== Skip Link ===== */
 .skip-link {
   position: absolute;
   top: -100%;
@@ -98,7 +95,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 16px;
 }
 
-/* ===== Navigation ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -183,7 +179,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all var(--transition-fast);
 }
 
-/* ===== Hero Section ===== */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -273,7 +268,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap;
 }
 
-/* ===== Buttons ===== */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -317,7 +311,6 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 3px;
 }
 
-/* ===== Sections ===== */
 .section {
   padding: 100px 24px;
 }
@@ -350,7 +343,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-/* ===== Flowing Artist Carousel ===== */
 .carousel-section {
   padding: 80px 0;
   overflow: hidden;
@@ -509,7 +501,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5;
 }
 
-/* ===== Genre Cards ===== */
 .genre-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -565,7 +556,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0.85rem;
 }
 
-/* ===== Artist Spotlight Page ===== */
 .page-header {
   padding: 140px 24px 60px;
   text-align: center;
@@ -601,7 +591,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-/* ===== Artist Detail Cards ===== */
 .artist-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -719,7 +708,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent-tertiary);
 }
 
-/* Expandable card */
 .card-expand-btn {
   display: inline-flex;
   align-items: center;
@@ -764,7 +752,6 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 500px;
 }
 
-/* ===== Recommendations Page ===== */
 .mood-section {
   margin-bottom: 64px;
 }
@@ -933,7 +920,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 2px;
 }
 
-/* ===== YouTube Player Modal ===== */
 .player-modal-overlay {
   position: fixed;
   inset: 0;
@@ -1053,7 +1039,6 @@ h1, h2, h3, h4, h5, h6 {
   border: none;
 }
 
-/* ===== Back to Top Button ===== */
 .back-to-top {
   position: fixed;
   bottom: 32px;
@@ -1093,7 +1078,6 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 3px;
 }
 
-/* ===== Eras Page ===== */
 .timeline {
   position: relative;
   padding-left: 40px;
@@ -1191,7 +1175,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 6px;
 }
 
-/* ===== Filter Buttons ===== */
 .filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -1229,7 +1212,6 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 3px;
 }
 
-/* ===== Footer ===== */
 .footer {
   padding: 60px 24px 32px;
   border-top: 1px solid var(--color-border);
@@ -1272,7 +1254,6 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-accent);
 }
 
-/* ===== Animations ===== */
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -1284,7 +1265,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(0);
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -1385,7 +1365,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* ─── Picks Tab Navigation ─── */
 .picks-tabs {
   display: flex;
   justify-content: center;
@@ -1455,7 +1434,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* ===== Reduced Motion ===== */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

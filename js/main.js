@@ -1,9 +1,7 @@
-/* ===== main.js — Mandopop Starter Guide ===== */
 
 (function () {
   'use strict';
 
-  /* ---------- Mobile Navigation Toggle ---------- */
   var navToggle = document.querySelector('.nav-toggle');
   var navLinks = document.querySelector('.nav-links');
 
@@ -32,7 +30,6 @@
     });
   }
 
-  /* ---------- Scroll-based Fade-In Animation ---------- */
   var fadeElements = document.querySelectorAll('.fade-in');
 
   if (fadeElements.length > 0) {
@@ -56,7 +53,6 @@
     });
   }
 
-  /* ---------- Expandable Artist Cards ---------- */
   var expandButtons = document.querySelectorAll('.card-expand-btn');
 
   expandButtons.forEach(function (btn) {
@@ -85,7 +81,6 @@
     });
   });
 
-  /* ---------- Artist Filter (Artists Page) ---------- */
   var artistFilterBtns = document.querySelectorAll('.filter-bar [data-filter]');
   var artistCards = document.querySelectorAll('.artist-detail-card[data-genre]');
 
@@ -110,7 +105,6 @@
     });
   }
 
-  /* ---------- Era Filter (Eras Page) ---------- */
   var eraFilterBtns = document.querySelectorAll('.filter-bar [data-era]');
   var eraBlocks = document.querySelectorAll('.era-block[data-era]');
 
@@ -135,7 +129,6 @@
     });
   }
 
-  /* ---------- Navbar Scroll Effect & Back to Top ---------- */
   var navbar = document.querySelector('.navbar');
   var backToTopBtn = document.getElementById('backToTop');
 
@@ -169,13 +162,11 @@
     });
   }
 
-  /* ---------- Carousel Pause / Play Button ---------- */
   var carouselTrack = document.querySelector('.carousel-track');
   var carouselPauseBtn = document.getElementById('carouselPauseBtn');
   var carouselPaused = false;
 
   if (carouselTrack && carouselPauseBtn) {
-    // Pause on focus for keyboard users
     carouselTrack.addEventListener('focusin', function () {
       carouselTrack.classList.add('paused');
     });
@@ -185,7 +176,6 @@
       }
     });
 
-    // Pause / Play toggle button
     carouselPauseBtn.addEventListener('click', function () {
       carouselPaused = !carouselPaused;
       var pauseIcon = carouselPauseBtn.querySelector('.pause-icon');
@@ -204,7 +194,6 @@
       }
     });
 
-    // Auto-pause if user prefers reduced motion
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       carouselPaused = true;
       carouselTrack.classList.add('paused');
@@ -216,7 +205,6 @@
     }
   }
 
-  /* ---------- YouTube Player Modal ---------- */
   var playerModal = document.getElementById('playerModal');
   var modalClose = document.getElementById('modalClose');
   var youtubePlayer = document.getElementById('youtubePlayer');
@@ -250,7 +238,6 @@
     playerModal.classList.add('active');
     document.body.style.overflow = 'hidden';
 
-    // Focus the close button for accessibility
     setTimeout(function () {
       if (modalClose) modalClose.focus();
     }, 100);
@@ -263,7 +250,6 @@
     playerModal.classList.remove('active');
     document.body.style.overflow = '';
 
-    // Return focus to the card that opened the modal
     if (lastFocusedElement) {
       lastFocusedElement.focus();
       lastFocusedElement = null;
@@ -272,7 +258,6 @@
 
   if (songCards.length > 0) {
     songCards.forEach(function (card) {
-      // Make the whole card focusable and announce as a button
       card.setAttribute('tabindex', '0');
       card.setAttribute('role', 'button');
       var title = card.getAttribute('data-title') || '';
@@ -281,12 +266,10 @@
         card.setAttribute('aria-label', 'Play ' + title + ' by ' + artist);
       }
 
-      // Click on the card itself
       card.addEventListener('click', function () {
         openPlayer(card);
       });
 
-      // Keyboard support for the card
       card.addEventListener('keydown', function (e) {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
@@ -301,21 +284,18 @@
   }
 
   if (playerModal) {
-    // Close on overlay click
     playerModal.addEventListener('click', function (e) {
       if (e.target === playerModal) {
         closePlayer();
       }
     });
 
-    // Close on Escape key
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && playerModal.classList.contains('active')) {
         closePlayer();
       }
     });
 
-    // Trap focus inside modal when open
     playerModal.addEventListener('keydown', function (e) {
       if (e.key !== 'Tab') return;
       if (!playerModal.classList.contains('active')) return;
@@ -338,27 +318,22 @@
     });
   }
 
-  // ─── Picks Tab Navigation ───
   const picksTabs = document.querySelectorAll('.picks-tab');
   const picksPanels = document.querySelectorAll('.picks-panel');
 
   if (picksTabs.length && picksPanels.length) {
     picksTabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        // Deactivate all tabs
         picksTabs.forEach(t => {
           t.classList.remove('active');
           t.setAttribute('aria-selected', 'false');
         });
-        // Hide all panels
         picksPanels.forEach(p => {
           p.classList.remove('active');
           p.setAttribute('hidden', '');
         });
-        // Activate clicked tab
         tab.classList.add('active');
         tab.setAttribute('aria-selected', 'true');
-        // Show corresponding panel
         const panelId = tab.getAttribute('aria-controls');
         const panel = document.getElementById(panelId);
         if (panel) {
@@ -367,7 +342,6 @@
         }
       });
 
-      // Keyboard navigation: arrow keys between tabs
       tab.addEventListener('keydown', (e) => {
         const tabsArr = Array.from(picksTabs);
         const idx = tabsArr.indexOf(tab);
